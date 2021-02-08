@@ -6,29 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CameraView">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnCapture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:src="@android:drawable/ic_menu_camera"
-        app:layout_constraintBottom_toBottomOf="@id/cardView"
-        app:layout_constraintEnd_toEndOf="@id/cardView"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="@id/cardView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:cardBackgroundColor="#969292"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="5dp"
-        app:cardUseCompatPadding="true"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
 
         <SurfaceView
             android:id="@+id/surfaceView"
@@ -39,5 +17,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
